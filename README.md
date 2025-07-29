@@ -1,6 +1,6 @@
 # Developer Portfolio - One Page Template (Dark Theme)
+This is a complete one-page portfolio template designed for developers, featuring a minimalist dark theme. It includes sections for personal information, skills, work experience, education, certificates, projects, and contact details. The template is built using HTML and Tailwind CSS, with icons sourced from Font Awesome.
 
-> ⚠️ All code, comments, and co### 7. Contact (`#contact`)
 - Simple form (optional) or email address
 - Include Font Awesome email icon
 - Add call-to-action like: "Let's collaborate!"
