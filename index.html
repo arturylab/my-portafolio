@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio - John Doe</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Fixed Sidebar Navigation -->
+    <nav class="fixed top-0 left-0 h-full w-64 bg-gray-900 shadow-xl z-50 hidden md:block">
+        <div class="h-full flex flex-col justify-center p-6">
+            <div class="text-center mb-8">
+                <div class="w-24 h-24 mx-auto mb-4 bg-gray-700 rounded-full flex items-center justify-center">
+                    <i class="fas fa-user text-3xl text-gray-300"></i>
+                </div>
+                <h2 class="text-xl font-bold text-white">John Doe</h2>
+                <p class="text-sm text-gray-400">Full Stack Developer</p>
+            </div>
+            
+            <ul class="space-y-3">
+                <li><a href="#introduction" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-home mr-3"></i>Introduction</a></li>
+                <li><a href="#skills" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-code mr-3"></i>Skills</a></li>
+                <li><a href="#experience" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-briefcase mr-3"></i>Experience</a></li>
+                <li><a href="#education" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-graduation-cap mr-3"></i>Education</a></li>
+                <li><a href="#certificates" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-certificate mr-3"></i>Certificates</a></li>
+                <li><a href="#projects" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-project-diagram mr-3"></i>Projects</a></li>
+                <li><a href="#contact" class="block py-2 px-4 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition-colors"><i class="fas fa-envelope mr-3"></i>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="md:hidden bg-gray-900 shadow-lg">
+        <div class="px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-user text-gray-300"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold text-white">John Doe</h2>
+                        <p class="text-xs text-gray-400">Full Stack Developer</p>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="text-gray-300 hover:text-white">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden px-4 pb-4">
+            <ul class="space-y-2">
+                <li><a href="#introduction" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-home mr-2"></i>Introduction</a></li>
+                <li><a href="#skills" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-code mr-2"></i>Skills</a></li>
+                <li><a href="#experience" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-briefcase mr-2"></i>Experience</a></li>
+                <li><a href="#education" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-graduation-cap mr-2"></i>Education</a></li>
+                <li><a href="#certificates" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-certificate mr-2"></i>Certificates</a></li>
+                <li><a href="#projects" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-project-diagram mr-2"></i>Projects</a></li>
+                <li><a href="#contact" class="block py-2 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded"><i class="fas fa-envelope mr-2"></i>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="md:ml-64 min-h-screen">
+        <!-- Introduction Section -->
+        <section id="introduction" class="min-h-screen flex items-center justify-center border-b border-gray-600 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4 py-8 text-center">
+                <div class="mb-8">
+                    <div class="w-32 h-32 mx-auto mb-6 bg-gray-700 rounded-full flex items-center justify-center">
+                        <i class="fas fa-user text-5xl text-gray-300"></i>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 text-white">John Doe</h1>
+                    <h2 class="text-xl md:text-2xl text-gray-300 mb-6">Full Stack Developer</h2>
+                    <p class="text-sm text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8">
+                        Passionate full stack developer with expertise in modern web technologies. 
+                        I create efficient, scalable solutions and love turning complex problems into 
+                        simple, beautiful designs. Always eager to learn new technologies and collaborate 
+                        on innovative projects.
+                    </p>
+                    
+                    <!-- Social Icons -->
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:john@example.com" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fas fa-envelope text-2xl"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/johndoe" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                        <a href="https://github.com/johndoe" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 border-b border-gray-600 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl font-bold uppercase text-center mb-12 text-white">Skills</h2>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Frontend Skills -->
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-html5 text-orange-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">HTML5</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-css3-alt text-blue-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">CSS3</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-js-square text-yellow-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">JavaScript</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-react text-blue-400 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">React</h3>
+                    </div>
+                    
+                    <!-- Backend Skills -->
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-python text-green-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">Python</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-database text-blue-600 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">Django</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-database text-orange-600 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">MySQL</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fas fa-leaf text-green-600 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">MongoDB</h3>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-git-alt text-red-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">Git</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-github text-white text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">GitHub</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-docker text-blue-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">Docker</h3>
+                    </div>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg text-center hover:bg-gray-700 transition-colors">
+                        <i class="fab fa-aws text-orange-500 text-4xl mb-3"></i>
+                        <h3 class="text-white font-semibold">AWS</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="py-16 border-b border-gray-600 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl font-bold uppercase text-center mb-12 text-white">Work Experience</h2>
+                
+                <div class="space-y-8">
+                    <!-- Experience Item 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-briefcase text-blue-500 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Senior Full Stack Developer</h3>
+                                    <p class="text-gray-300">Tech Solutions Inc.</p>
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-400 mt-2 md:mt-0">Jan 2022 - Present</span>
+                        </div>
+                        <ul class="text-sm text-gray-300 leading-relaxed space-y-2 ml-10">
+                            <li>• Led development of scalable web applications using React and Django</li>
+                            <li>• Improved application performance by 40% through code optimization</li>
+                            <li>• Mentored junior developers and conducted code reviews</li>
+                            <li>• Implemented CI/CD pipelines using Docker and AWS</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Experience Item 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-briefcase text-green-500 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Full Stack Developer</h3>
+                                    <p class="text-gray-300">StartupXYZ</p>
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-400 mt-2 md:mt-0">Jun 2020 - Dec 2021</span>
+                        </div>
+                        <ul class="text-sm text-gray-300 leading-relaxed space-y-2 ml-10">
+                            <li>• Developed and maintained web applications using JavaScript and Python</li>
+                            <li>• Collaborated with design team to implement responsive UI/UX</li>
+                            <li>• Integrated third-party APIs and payment systems</li>
+                            <li>• Participated in agile development processes</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Experience Item 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-briefcase text-orange-500 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Junior Web Developer</h3>
+                                    <p class="text-gray-300">Digital Agency Co.</p>
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-400 mt-2 md:mt-0">Sep 2019 - May 2020</span>
+                        </div>
+                        <ul class="text-sm text-gray-300 leading-relaxed space-y-2 ml-10">
+                            <li>• Built responsive websites using HTML, CSS, and JavaScript</li>
+                            <li>• Assisted in backend development using PHP and MySQL</li>
+                            <li>• Optimized websites for SEO and performance</li>
+                            <li>• Provided technical support and maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16 border-b border-gray-600 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl font-bold uppercase text-center mb-12 text-white">Education</h2>
+                
+                <div class="space-y-8">
+                    <!-- Education Item 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-graduation-cap text-purple-500 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Bachelor of Computer Science</h3>
+                                    <p class="text-gray-300">University of Technology</p>
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-400 mt-2 md:mt-0">2015 - 2019</span>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed ml-10">
+                            Graduated with honors. Focused on software engineering, web development, 
+                            and database management. Participated in programming competitions and 
+                            hackathons.
+                        </p>
+                    </div>
+                    
+                    <!-- Education Item 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-graduation-cap text-yellow-500 text-2xl mr-4 mt-1"></i>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Full Stack Web Development</h3>
+                                    <p class="text-gray-300">Coding Bootcamp</p>
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-400 mt-2 md:mt-0">2019</span>
+                        </div>
+                        <p class="text-sm text-gray-300 leading-relaxed ml-10">
+                            Intensive 6-month program covering modern web development technologies 
+                            including React, Node.js, and database management. Built multiple 
+                            full-stack projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section id="certificates" class="py-16 border-b border-gray-600 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl font-bold uppercase text-center mb-12 text-white">Certificates & Courses</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Certificate 1 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-certificate text-yellow-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-bold text-white">AWS Certified Developer</h3>
+                        </div>
+                        <p class="text-gray-300 mb-2">Amazon Web Services</p>
+                        <p class="text-sm text-gray-400 mb-3">2023</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i>View Credential
+                        </a>
+                    </div>
+                    
+                    <!-- Certificate 2 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-certificate text-blue-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-bold text-white">React Developer Certification</h3>
+                        </div>
+                        <p class="text-gray-300 mb-2">Meta (Facebook)</p>
+                        <p class="text-sm text-gray-400 mb-3">2022</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i>View Credential
+                        </a>
+                    </div>
+                    
+                    <!-- Certificate 3 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-certificate text-green-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-bold text-white">Python for Data Science</h3>
+                        </div>
+                        <p class="text-gray-300 mb-2">IBM</p>
+                        <p class="text-sm text-gray-400 mb-3">2021</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i>View Credential
+                        </a>
+                    </div>
+                    
+                    <!-- Certificate 4 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-certificate text-red-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-bold text-white">Docker Fundamentals</h3>
+                        </div>
+                        <p class="text-gray-300 mb-2">Docker Inc.</p>
+                        <p class="text-sm text-gray-400 mb-3">2022</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i>View Credential
+                        </a>
+                    </div>
+                    
+                    <!-- Certificate 5 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-certificate text-purple-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-bold text-white">Machine Learning Basics</h3>
+                        </div>
+                        <p class="text-gray-300 mb-2">Coursera</p>
+                        <p class="text-sm text-gray-400 mb-3">2021</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i>View Credential
+                        </a>
+                    </div>
+                    
+                    <!-- Certificate 6 -->
+                    <div class="bg-gray-900 p-6 rounded-lg">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-certificate text-orange-500 text-xl mr-3"></i>
+                            <h3 class="text-lg font-bold text-white">Agile Development</h3>
+                        </div>
+                        <p class="text-gray-300 mb-2">Scrum Alliance</p>
+                        <p class="text-sm text-gray-400 mb-3">2020</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                            <i class="fas fa-external-link-alt mr-1"></i>View Credential
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 border-b border-gray-600 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl font-bold uppercase text-center mb-12 text-white">Projects</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                        <div class="h-48 bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">E-Commerce Platform</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                Full-featured e-commerce platform with user authentication, 
+                                payment processing, and admin dashboard. Built with React and Django.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">React</span>
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Django</span>
+                                <span class="bg-orange-600 text-white text-xs px-2 py-1 rounded">PostgreSQL</span>
+                                <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Redis</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                        <div class="h-48 bg-gradient-to-br from-green-600 to-green-800 flex items-center justify-center">
+                            <i class="fas fa-tasks text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">Task Management App</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                Collaborative task management application with real-time updates, 
+                                team collaboration features, and project analytics.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Vue.js</span>
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Node.js</span>
+                                <span class="bg-yellow-600 text-white text-xs px-2 py-1 rounded">MongoDB</span>
+                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded">Socket.io</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                        <div class="h-48 bg-gradient-to-br from-purple-600 to-purple-800 flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">Data Analytics Dashboard</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                Interactive data visualization dashboard for business analytics 
+                                with real-time charts and reporting capabilities.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">React</span>
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Python</span>
+                                <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Flask</span>
+                                <span class="bg-orange-600 text-white text-xs px-2 py-1 rounded">Chart.js</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                        <div class="h-48 bg-gradient-to-br from-red-600 to-red-800 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">Mobile Expense Tracker</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                Cross-platform mobile app for tracking expenses with category 
+                                management, budget alerts, and spending analytics.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">React Native</span>
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Node.js</span>
+                                <span class="bg-orange-600 text-white text-xs px-2 py-1 rounded">SQLite</span>
+                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded">Redux</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                        <div class="h-48 bg-gradient-to-br from-yellow-600 to-yellow-800 flex items-center justify-center">
+                            <i class="fas fa-blog text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">CMS Blog Platform</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                Content management system for blogging with user roles, 
+                                commenting system, and SEO optimization features.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded">PHP</span>
+                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">Laravel</span>
+                                <span class="bg-orange-600 text-white text-xs px-2 py-1 rounded">MySQL</span>
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Bootstrap</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                        <div class="h-48 bg-gradient-to-br from-indigo-600 to-indigo-800 flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-3">AI Chatbot Assistant</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                                Intelligent chatbot with natural language processing capabilities 
+                                for customer support and automated responses.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-green-600 text-white text-xs px-2 py-1 rounded">Python</span>
+                                <span class="bg-blue-600 text-white text-xs px-2 py-1 rounded">TensorFlow</span>
+                                <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">Flask</span>
+                                <span class="bg-yellow-600 text-white text-xs px-2 py-1 rounded">NLP</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fab fa-github mr-1"></i>GitHub
+                                </a>
+                                <a href="#" class="text-blue-400 hover:text-blue-300 text-sm">
+                                    <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-800">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-2xl font-bold uppercase text-center mb-12 text-white">Contact</h2>
+                
+                <div class="max-w-2xl mx-auto text-center">
+                    <h3 class="text-xl font-bold text-white mb-6">Let's Collaborate!</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed mb-12">
+                        I'm always interested in discussing new opportunities, innovative projects, 
+                        and creative collaborations. Whether you have a project in mind or just 
+                        want to connect, feel free to reach out!
+                    </p>
+                    
+                    <div class="flex flex-wrap justify-center gap-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-gray-500 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">Email</p>
+                                <a href="mailto:john@example.com" class="text-gray-300 hover:text-white text-sm">john@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fab fa-linkedin text-blue-500 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">LinkedIn</p>
+                                <a href="https://linkedin.com/in/johndoe" target="_blank" class="text-gray-300 hover:text-white text-sm">@johndoe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fab fa-github text-black-500 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">GitHub</p>
+                                <a href="https://github.com/johndoe" target="_blank" class="text-gray-300 hover:text-white text-sm">@johndoe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fab fa-x-twitter text-gray-400 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">X (Twitter)</p>
+                                <a href="https://x.com/johndoe" target="_blank" class="text-gray-300 hover:text-white text-sm">@johndoe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fab fa-instagram text-pink-500 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">Instagram</p>
+                                <a href="https://instagram.com/johndoe" target="_blank" class="text-gray-300 hover:text-white text-sm">@johndoe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fab fa-youtube text-red-500 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">YouTube</p>
+                                <a href="https://youtube.com/@johndoe" target="_blank" class="text-gray-300 hover:text-white text-sm">@johndoe</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-red-500 text-xl mr-3 flex-shrink-0"></i>
+                            <div class="text-left">
+                                <p class="text-white font-semibold text-sm">Location</p>
+                                <p class="text-gray-300 text-sm">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="md:ml-64 py-8 border-t border-gray-600 bg-gray-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <p class="text-gray-400 text-sm">© 2024 John Doe. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="mailto:john@example.com" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/johndoe" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/johndoe" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/johndoe" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com/johndoe" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/@johndoe" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.className = 'fas fa-bars text-xl';
+                } else {
+                    icon.className = 'fas fa-times text-xl';
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.querySelector('i').className = 'fas fa-bars text-xl';
+                });
+            });
+            
+            // Smooth scrolling for all anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Highlight active navigation link
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('nav a[href^="#"]');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('bg-gray-700', 'text-white');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('bg-gray-700', 'text-white');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
