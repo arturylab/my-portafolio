@@ -1,0 +1,24 @@
+{
+  "name": "Arturylab Portfolio",
+  "short_name": "Arturylab",
+  "description": "Portfolio of Arturo Rentería (@arturylab), software developer and scientific researcher specializing in full stack development, computational chemistry, and modern web technologies.",
+  "lang": "en",
+  "start_url": "/my-portafolio/",
+  "scope": "/my-portafolio/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/img/profile.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/profile.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

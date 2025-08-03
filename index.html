@@ -1,21 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Basics -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Arturo Rentería</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/img/profile.png">
-    <!-- Tailwind CSS -->
-    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAGQAAABkAAAAZAAAAP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A">
-    
+    <meta name="description" content="Portfolio of Arturo Rentería (@arturylab), software developer and scientific researcher specializing in full stack development, computational chemistry, and modern web technologies." />
+    <meta name="author" content="Arturo Rentería" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+
+    <!-- Canonical (actual portfolio URL) -->
+    <link rel="canonical" href="https://arturylab.github.io/my-portafolio/" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/profile.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Portfolio - Arturo Rentería" />
+    <meta property="og:description" content="Discover the projects and skills of Arturo Rentería (@arturylab), software developer and scientific researcher." />
+    <meta property="og:image" content="https://arturylab.github.io/my-portafolio/assets/img/og-preview.png" />
+    <meta property="og:url" content="https://arturylab.github.io/my-portafolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter/X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio - Arturo Rentería" />
+    <meta name="twitter:description" content="Explore my projects, experience, and technologies in full stack development, computational chemistry, and modern web." />
+    <meta name="twitter:image" content="https://arturylab.github.io/my-portafolio/assets/img/og-preview.png" />
+    <meta name="twitter:site" content="@arturylab" />
+
+    <!-- Social profiles (correctly linked to your handle) -->
+    <link rel="me" href="https://linkedin.com/in/arturylab" />
+    <link rel="me" href="https://x.com/arturylab" />
+    <link rel="me" href="https://instagram.com/arturylab" />
+    <link rel="me" href="https://youtube.com/@arturylab" />
+
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- JSON-LD (structure for Google and semantic SEO) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Arturo Rentería",
+            "url": "https://arturylab.github.io/my-portafolio/",
+            "sameAs": [
+                "https://linkedin.com/in/arturylab",
+                "https://x.com/arturylab",
+                "https://instagram.com/arturylab",
+                "https://youtube.com/@arturylab"
+            ],
+            "jobTitle": "Software Developer",
+            "description": "Software developer and scientific researcher specializing in full stack development, computational chemistry, and modern web technologies.",
+            "image": "https://arturylab.github.io/my-portafolio/images/og-preview.jpg"
+        }
+    </script>
 </head>
+
 
 <body class="bg-gray-900 text-gray-100 font-mono">
     <!-- Fixed Sidebar Navigation -->
