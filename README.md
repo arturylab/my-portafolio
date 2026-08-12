@@ -1,9 +1,8 @@
 # Developer Portfolio - One Page Template (Dark Theme)
-This is a complete one-page portfolio template designed for developers, featuring a minimalist dark theme. It includes sections for personal information, skills, work experience, education, certificates, projects, and contact details. The template is built using HTML and Tailwind CSS, with icons sourced from Font Awesome.
 
-- Simple form (optional) or email address
-- Include Font Awesome email icon
-- Add call-to-action like: "Let's collaborate!"
+🔗 **Live site:** https://arturylab.github.io/my-portafolio/
+
+This is a complete one-page portfolio template designed for developers, featuring a minimalist dark theme. It includes sections for personal information, skills, work experience, education, certificates, projects, and contact details. The template is built using HTML and Tailwind CSS, with icons sourced from Font Awesome.
 
 ---
 
@@ -53,7 +52,13 @@ portfolio/
 4. Add your images to the `assets/` folder
 5. Deploy to your preferred hosting platform
 
-The template is now ready for customization and deployment!t must be written in **English**.  
+The template is now ready for customization and deployment!
+
+---
+
+## 📋 Requirements
+
+> 🌐 Content must be written in **English**.  
 > 🎨 Design must follow a **minimalist dark theme**.  
 > 🧱 Built with **HTML** and **Tailwind CSS** only.  
 > 🎯 Icons from **Font Awesome** only: https://fontawesome.com/
