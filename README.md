@@ -1,6 +1,6 @@
 # Developer Portfolio - One Page Template (Dark Theme)
 
-🔗 **Live site:** https://arturylab.github.io/my-portafolio/
+🔗 **Live site:** [https://portfolio.arturylab.dev/](https://portfolio.arturylab.dev/)
 
 This is a complete one-page portfolio template designed for developers, featuring a minimalist dark theme. It includes sections for personal information, skills, work experience, education, certificates, projects, and contact details. The template is built using HTML and Tailwind CSS, with icons sourced from Font Awesome.
 
